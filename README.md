@@ -7,18 +7,20 @@
 [![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org/)
 [![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)](https://spring.io/)
 [![Flyway](https://img.shields.io/badge/Flyway-E32322?style=for-the-badge&logo=flyway&logoColor=white)](https://flywaydb.org/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 
 ## Descrição
 
-Esta aplicação foi desenvolvida como parte de um teste técnico para a empresa [WS Work](https://wswork.com.br/). A aplicação utiliza uma arquitetura de camadas simples, desenvolvida em Java e Kotlin, utilizando o framework Spring e Flyway para o controle de migrations.
+Esta aplicação foi desenvolvida como parte de um teste técnico para a empresa [WS Work](https://wswork.com.br/). A aplicação utiliza uma arquitetura de camadas simples, desenvolvida em Java e Kotlin, utilizando o framework Spring e Flyway para o controle de migrations, Docker para facilitar o uso de dependências externas e PostgreSQL como banco de dados.
 
 ## Tecnologias Utilizadas
 
-- **Java**
-- **Kotlin**
-- **Spring Framework**
-- **Flyway**
-- **Docker**
+- **Java** -> O Projeto é majoritariamente escrito em Java.
+- **Kotlin** -> Optei por usar Kotlin nos controller dado a remoção de verbosidade e por conta da sua interoperabilidade com Java
+- **Spring Framework** -> Framework sugerido no teste
+- **Flyway** -> Com flyway é possível ter um registro de todas as alterações que forem feitas na base de dados e se necessáro realizar um rollback.
+- **Docker** -> O Docker principalmente nesse projeto facilita a utilzação de dependências externas (PostgreSQL), no entanto, a aplicação poderia facilmente ser dockerizada com o Dockerfile
 
 ## Estrutura do Projeto
 
